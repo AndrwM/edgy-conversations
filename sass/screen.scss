@@ -4,3 +4,182 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "http://fonts.googleapis.com/css?family=Cabin:700,700italic|Open+Sans:600,400";
+
+//----------------- Variables
+
+$red: #cc0504;
+$light-grey: #f0f0f0;
+$grey: #7f7f7f;
+$dark-grey: #1a1a1a;
+
+//----------------- Mixins
+
+@mixin ff-cabin {
+  font-family:'Cabin', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+@mixin ff-open-reg {
+  font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin ff-open-bold {
+  font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+@mixin fade {
+  @include transition-duration(.6s);
+}
+
+//----------------- Base
+
+a {
+  text-decoration: none;
+  &.btn {
+    @include ff-cabin;
+    color: #fff;
+    font-size: 18px;
+    background: $red;
+    text-transform: uppercase;
+    padding: 10px 18px 9px;
+    text-align: center;
+    @include fade;
+  }
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 16px;
+  border: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 880px
+}
+
+section {
+  @include clearfix;
+  h1 {
+    color: $red;
+    font-size: 44px;
+    @include ff-cabin;
+    text-transform: uppercase;
+    & span {
+      color: $grey;
+      font-size: 14px;
+      display: block;
+    }
+  }
+  .left-content {
+    float: left;
+    width: 460px;
+  }
+}
+
+//----------------- Site
+
+body {
+  font-size: 14px;
+  color: #000;
+  @include ff-open-reg;
+  background: $light-grey;
+}
+
+header {
+  background: #000 url(../images/header-bg.jpg) center top no-repeat;
+  height: 600px;
+  color: #fff;
+  @include ff-cabin;
+
+  .top {
+    width: 940px;
+    padding: 12px 60px;
+    margin: 0 auto;
+    border-bottom: 1px solid $dark-grey;
+    @include clearfix;
+    h1 {
+      float: left;
+      font-style: italic;
+      color: $grey;
+      a {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        font-style: normal;
+        margin-right: 4px;
+        img {
+          margin: 0 8px -5px 0;
+        }
+      }
+    }
+    nav {
+      float: right;
+      margin: 5px 0 0 0;
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0 0 0 20px;
+        @include fade;
+        &:hover {
+          color: $grey;
+        }
+      }
+    }
+  }
+
+  .video-promo {
+    text-align: center;
+    margin: 170px auto 0 auto;
+    width: 800px;
+    h2{
+      font-size: 26px;
+      color: #fff;
+      font-style: italic;
+      span {
+        font-size: 180px;
+        color: $red;
+        font-style: normal;
+        text-transform: uppercase;
+        line-height: 166px;
+      }
+    }
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin:10px 0;
+      @include fade;
+      @include opacity(0.3);
+      img {
+        margin: 0 10px -15px;
+      }
+      &:hover {
+        @include opacity(1);
+      }
+    }
+  }
+}
+
+section.signup {
+  padding: 18px 0;
+  background: #fff;
+
+  input {
+    background: $light-grey;
+    width: 280px;
+    margin-right: 6px;
+  }
+  a.btn {
+    &:hover {
+      color: #fff;
+      background: #000;
+    }
+  }
+
+}
