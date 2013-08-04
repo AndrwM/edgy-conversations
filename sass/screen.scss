@@ -33,10 +33,22 @@ $dark-grey: #1a1a1a;
 }
 
 @mixin fade {
-  @include transition-duration(.6s);
+  @include transition-duration(.5s);
 }
 
 //----------------- Base
+
+* { position: relative; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 880px
+}
+
+p {
+  line-height: 24px;
+  padding:0 0 30px 0;
+}
 
 a {
   text-decoration: none;
@@ -46,7 +58,7 @@ a {
     font-size: 18px;
     background: $red;
     text-transform: uppercase;
-    padding: 10px 18px 9px;
+    padding: 14px 18px 13px;
     text-align: center;
     @include fade;
   }
@@ -54,27 +66,29 @@ a {
 
 input {
   font-size: 18px;
-  padding: 10px 16px;
+  padding: 14px 16px;
   border: none;
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: 880px
 }
 
 section {
   @include clearfix;
+
   h1 {
     color: $red;
     font-size: 44px;
     @include ff-cabin;
     text-transform: uppercase;
+    padding:0 0 20px 0;
     & span {
       color: $grey;
       font-size: 14px;
       display: block;
     }
+  }
+  h2 {
+    @include ff-open-bold;
+    font-size: 16px;
+    padding:0 0 10px 0;
   }
   .left-content {
     float: left;
@@ -172,7 +186,7 @@ section.signup {
 
   input {
     background: $light-grey;
-    width: 280px;
+    width: 256px;
     margin-right: 6px;
   }
   a.btn {
@@ -182,4 +196,68 @@ section.signup {
     }
   }
 
+}
+
+section.book {
+  padding: 50px 0 0 0;
+  .diver {
+    clear:both;
+    padding: 64px 72px 86px 188px;
+    color: #fff;
+    line-height: 29px;
+    font-size: 16px;
+    background: no-repeat 0 0 url(../images/diver-quotebox.gif);
+  }
+  .bookmock {
+    margin: -6px 0 0 90px;
+  }
+}
+
+section.author {
+  padding: 50px 0 36px 0;
+  background: #fff;
+  .dan {
+    position: absolute;
+    top: -87px;
+    z-index: 10000;
+    right: -15px;
+  }
+}
+
+section.order {
+  padding: 50px 0 70px 0;
+  background: #000;
+  color: #fff;
+  h1 {
+    padding-bottom: 6px;
+  }
+  form {
+    float: left;
+    width: 420px;
+    margin: 40px 0 0 0;
+    * {
+      display: block;
+      margin: 0 0 10px 0;
+    }
+    input {
+      width: 390px;
+      background: $dark-grey;
+      color: #fff;
+    }
+    a.btn:hover {
+      color: $red;
+      background: #fff;
+    }
+    span {
+      text-align: center;
+      color: $grey;
+    }
+  }
+  .bookmock {
+    margin: 19px 0 0px 60px;
+  }
+}
+
+footer {
+  padding: 26px;
 }
