@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+
   resizeHeader();
   scrollToId();
 
@@ -20,7 +20,7 @@ function resizeHeader () {
   var headerHeight = ( windowHeight - 66 )
 
   header.height(headerHeight)
-  header.backstretch(["images/header-bg.jpg"], {centeredY: false, fade:1200});
+  header.backstretch(["wp-content/themes/edgy-conversations/images/header-bg.jpg"], {centeredY: false, fade:1200});
 
 };
 
