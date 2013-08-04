@@ -110,10 +110,10 @@ header {
   height: 600px;
   color: #fff;
   @include ff-cabin;
-
+  .backstretch { background-color: #000 }
   .top {
     width: 940px;
-    padding: 12px 60px;
+    padding: 12px 60px 14px;
     margin: 0 auto;
     border-bottom: 1px solid $dark-grey;
     @include clearfix;
