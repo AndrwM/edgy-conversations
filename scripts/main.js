@@ -10,6 +10,8 @@ $(document).ready(function() {
 
 });
 
+// ---------------------
+
 function resizeHeader () {
 
   var header = $('header');
@@ -22,9 +24,13 @@ function resizeHeader () {
 
 };
 
+// ---------------------
+
 function playHeadVideo () {
   $('.video-promo,.backstretch img').fadeOut(500);
 };
+
+// ---------------------
 
 function scrollToId () {
 
@@ -45,4 +51,6 @@ function scrollToId () {
     }
   });
 
-}
+};
+
+// ---------------------
