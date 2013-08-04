@@ -149,8 +149,14 @@ header {
 
   .video-promo {
     text-align: center;
-    margin: 170px auto 0 auto;
+    position: absolute;
     width: 800px;
+    top: 0;
+    bottom: 0;
+    height: 280px;
+    margin: auto;
+    left: 0;
+    right: 0;
     h2{
       font-size: 26px;
       color: #fff;

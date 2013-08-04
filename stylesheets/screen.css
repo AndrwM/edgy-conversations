@@ -211,16 +211,22 @@ header .top nav a:hover {
 /* line 150, ../sass/screen.scss */
 header .video-promo {
   text-align: center;
-  margin: 170px auto 0 auto;
+  position: absolute;
   width: 800px;
+  top: 0;
+  bottom: 0;
+  height: 280px;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
-/* line 154, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 header .video-promo h2 {
   font-size: 26px;
   color: #fff;
   font-style: italic;
 }
-/* line 158, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 header .video-promo h2 span {
   font-size: 180px;
   color: #cc0504;
@@ -228,7 +234,7 @@ header .video-promo h2 span {
   text-transform: uppercase;
   line-height: 166px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 header .video-promo a {
   color: #fff;
   text-transform: uppercase;
@@ -241,38 +247,38 @@ header .video-promo a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
-/* line 173, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 header .video-promo a img {
   margin: 0 10px -15px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 header .video-promo a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 section.signup {
   padding: 18px 0;
   background: #fff;
 }
-/* line 187, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 section.signup input {
   background: #f0f0f0;
   width: 256px;
   margin-right: 6px;
 }
-/* line 193, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 section.signup a.btn:hover {
   color: #fff;
   background: #000;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 section.book {
   padding: 50px 0 0 0;
 }
-/* line 203, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 section.book .diver {
   clear: both;
   padding: 64px 72px 86px 188px;
@@ -281,17 +287,17 @@ section.book .diver {
   font-size: 16px;
   background: no-repeat 0 0 url(../images/diver-quotebox.gif);
 }
-/* line 211, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 section.book .bookmock {
   margin: -6px 0 0 90px;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 section.author {
   padding: 50px 0 36px 0;
   background: #fff;
 }
-/* line 219, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 section.author .dan {
   position: absolute;
   top: -87px;
@@ -299,49 +305,49 @@ section.author .dan {
   right: -15px;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 section.order {
   padding: 50px 0 70px 0;
   background: #000;
   color: #fff;
 }
-/* line 231, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 section.order h1 {
   padding-bottom: 6px;
 }
-/* line 234, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 section.order form {
   float: left;
   width: 420px;
   margin: 40px 0 0 0;
 }
-/* line 238, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 section.order form * {
   display: block;
   margin: 0 0 10px 0;
 }
-/* line 242, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 section.order form input {
   width: 390px;
   background: #1a1a1a;
   color: #fff;
 }
-/* line 247, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 section.order form a.btn:hover {
   color: #cc0504;
   background: #fff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 section.order form span {
   text-align: center;
   color: #7f7f7f;
 }
-/* line 256, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 section.order .bookmock {
   margin: 19px 0 0px 60px;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 footer {
   padding: 26px;
 }
