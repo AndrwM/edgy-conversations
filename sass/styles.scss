@@ -109,7 +109,7 @@ body {
 }
 
 header {
-  background: #000 url(../images/header-bg.jpg) center top no-repeat;
+  background: #000 url(images/header-bg.jpg) center top no-repeat;
   height: 600px;
   color: #fff;
   @include ff-cabin;
@@ -223,7 +223,7 @@ section.book {
     color: #fff;
     line-height: 29px;
     font-size: 16px;
-    background: no-repeat 0 0 url(../images/diver-quotebox.gif);
+    background: no-repeat 0 0 url(images/diver-quotebox.gif);
   }
   .bookmock {
     margin: -6px 0 0 90px;
