@@ -71,6 +71,8 @@ input {
   font-size: 18px;
   padding: 14px 16px;
   border: none;
+  outline: transparent solid 1px;
+  @include fade;
   &:focus {
     outline: $red solid 1px;
   }
@@ -78,6 +80,7 @@ input {
 
 section {
   @include clearfix;
+  overflow: visible;
 
   h1 {
     color: $red;
@@ -219,13 +222,14 @@ section.signup {
 }
 
 section.book {
-  padding: 50px 0 0 0;
+  padding: 60px 0 0 0;
   .diver {
     clear:both;
-    padding: 64px 72px 86px 188px;
+    padding: 64px 72px 80px 188px;
     color: #fff;
     line-height: 29px;
     font-size: 16px;
+    margin: 10px 0 0 0;
     background: no-repeat 0 0 url(images/diver-quotebox.gif);
   }
   .bookmock {
@@ -234,18 +238,18 @@ section.book {
 }
 
 section.author {
-  padding: 50px 0 36px 0;
+  padding: 60px 0 80px 0;
   background: #fff;
+  .left-content { float: none; }
   .dan {
     position: absolute;
     top: -87px;
-    z-index: 10000;
     right: -15px;
   }
 }
 
 section.order {
-  padding: 50px 0 70px 0;
+  padding: 70px 0 110px 0;
   background: #000;
   color: #fff;
   h1 {
@@ -280,4 +284,6 @@ section.order {
 
 footer {
   padding: 26px;
+  background: $dark-grey;
+  color: $grey;
 }
