@@ -8,6 +8,14 @@ $(document).ready(function() {
     return false;
   });
 
+  // wistiaEmbed = Wistia.embed("28xbs18fh2", {
+  //   playerColor: "cc0504",
+  //   videoFoam: true,
+  //   autoPlay: true,
+  //   fullscreenButton: false,
+  //   container: "promo-video-containe"
+  // });
+
 });
 
 // ---------------------
@@ -20,14 +28,34 @@ function resizeHeader () {
   var headerHeight = ( windowHeight - 66 )
 
   header.height(headerHeight)
-  header.backstretch(["wp-content/themes/edgy-conversations/images/header-bg.jpg"], {centeredY: false, fade:1200});
-
 };
 
 // ---------------------
 
 function playHeadVideo () {
-  $('.video-promo,.backstretch img').fadeOut(500);
+
+  $('header').addClass('video-play')
+
+  wistiaEmbed = Wistia.embed("28xbs18fh2", {
+    playerColor: "000000",
+    autoPlay: true,
+    fullscreenButton: false,
+    container: "videoContainer",
+  });
+
+  wistiaEmbed.bind("end", function () {
+    unload();
+  });
+
+  $('nav a').one('click', function() {
+    unload();
+  });
+
+  function unload () {
+    wistiaEmbed.remove();
+    $('header').removeClass('video-play')
+  }
+
 };
 
 // ---------------------

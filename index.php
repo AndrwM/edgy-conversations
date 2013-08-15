@@ -5,14 +5,17 @@
 
   <!-- Top -->
   <div class="top">
-    <h1>
-      <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/waldlogo-sm.png">EDGY Conversations</a>
-      How Ordinary People Achieve Outrageous Success
-    </h1>
-    <nav>
-      <a href="#book">About The Book</a>
-      <a href="#author">Author</a>
-      <a href="#order" class="promo">Pre-Order</a>
+    <div class="wrapper">
+      <h1>
+        <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/waldlogo-sm.png">EDGY Conversations</a>
+        How Ordinary People Achieve Outrageous Success
+      </h1>
+      <nav>
+        <a href="#book">About The Book</a>
+        <a href="#author">Author</a>
+        <a href="#order" class="promo">Sign Me Up</a>
+      </nav>
+    </div>
   </div>
 
   <!-- Video Area -->
@@ -21,13 +24,15 @@
     <a href="#" class="play-video">Play<img src="<?php bloginfo('template_url'); ?>/images/playbtn.png">Video</a>
   </div>
 
+  <div class="video-container" id="videoContainer">&nbsp;</div>
+
 </header>
 
 <section class="signup">
   <form class="wrapper">
     <input class="required" type="text" value="" placeholder="First Name">
     <input class="required" type="text" value="" placeholder="Email Address">
-    <a href="#" class="submit btn">Add me to the Waiting List</a>
+    <a href="#" class="submit btn">Sign Me Up</a>
   </form>
 </section>
 
@@ -65,7 +70,7 @@
     <form>
       <input class="required" type="text" value="" placeholder="First Name">
       <input class="required" type="text" value="" placeholder="Email Address">
-      <a href="#" class="submit btn">Add me to the Waiting List</a>
+      <a href="#" class="submit btn">Sign Me Up</a>
       <span>Book pre-orders begin July 30th</span>
     </form>
 
@@ -76,7 +81,7 @@
 <!-- Foooooooooooter -->
 <footer>
   <div class="wrapper">
-    Copyright Waldschmidt Partners 2013, All Rights Reserved.
+    Copyright Waldschmidt Partners <?php echo date("Y"); ?>, All Rights Reserved.
   </div>
 </footer>
 

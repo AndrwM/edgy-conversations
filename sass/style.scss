@@ -115,17 +115,28 @@ body {
 }
 
 header {
-  background: #000 url(images/header-bg.jpg) center top no-repeat;
+  background: #000;
   height: 600px;
   color: #fff;
   @include ff-cabin;
-  .backstretch { background-color: #000 }
+  .video-container {
+    background: #000 url(images/header-bg.jpg) center top no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
   .top {
-    width: 940px;
-    padding: 12px 60px 14px;
-    margin: 0 auto;
-    border-bottom: 1px solid $dark-grey;
-    @include clearfix;
+    .wrapper {
+      width: 960px;
+      padding: 12px 60px 14px;
+      border-bottom: 1px solid $dark-grey;
+      @include clearfix;
+    }
+    right: 0;
+    left:0;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
     h1 {
       float: left;
       font-style: italic;
@@ -174,6 +185,7 @@ header {
     margin: auto;
     left: 0;
     right: 0;
+    z-index: 1000;
     h2{
       font-size: 26px;
       color: #fff;
@@ -201,6 +213,18 @@ header {
       }
     }
   }
+  &.video-play {
+    .top {
+      @include fade;
+      opacity: 0.4;
+      background: #000;
+      &:hover { opacity: 1; }
+    }
+    .video-promo {
+      @include fade;
+      opacity: 0;
+    }
+  }
 }
 
 section.signup {
@@ -209,10 +233,11 @@ section.signup {
 
   input {
     background: $light-grey;
-    width: 256px;
+    width: 308px;
     margin-right: 6px;
   }
   a.btn {
+    padding: 14px 40px 13px;
     &:hover {
       color: #fff;
       background: #000;
