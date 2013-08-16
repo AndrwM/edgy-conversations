@@ -421,7 +421,19 @@ footer {
   color: #7f7f7f;
 }
 
-/* line 327, sass/style.scss */
+/* line 326, sass/style.scss */
+html.cssanimations header .video-promo {
+  opacity: 0;
+}
+/* line 328, sass/style.scss */
+html.cssanimations header .video-promo.show {
+  opacity: 1;
+  -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+/* line 333, sass/style.scss */
 html.cssanimations section.book .bookmock {
   opacity: 0;
   right: -200px;
@@ -430,12 +442,12 @@ html.cssanimations section.book .bookmock {
   -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-/* line 332, sass/style.scss */
+/* line 338, sass/style.scss */
 html.cssanimations section.book.trigger-animate .bookmock {
   opacity: 1;
   right: 0;
 }
-/* line 337, sass/style.scss */
+/* line 343, sass/style.scss */
 html.cssanimations section.book .diver {
   opacity: 0;
   top: 110px;
@@ -444,12 +456,12 @@ html.cssanimations section.book .diver {
   -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-/* line 341, sass/style.scss */
+/* line 347, sass/style.scss */
 html.cssanimations section.book .diver.trigger-animate {
   opacity: 1;
   top: 0;
 }
-/* line 350, sass/style.scss */
+/* line 356, sass/style.scss */
 html.cssanimations section.author .dan {
   top: 200px;
   opacity: 0;
@@ -458,12 +470,12 @@ html.cssanimations section.author .dan {
   -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-/* line 355, sass/style.scss */
+/* line 361, sass/style.scss */
 html.cssanimations section.author.trigger-animate .dan {
   top: -87px;
   opacity: 1;
 }
-/* line 363, sass/style.scss */
+/* line 369, sass/style.scss */
 html.cssanimations section.order .bookmock {
   opacity: 0;
   right: -200px;
@@ -472,7 +484,7 @@ html.cssanimations section.order .bookmock {
   -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-/* line 368, sass/style.scss */
+/* line 374, sass/style.scss */
 html.cssanimations section.order.trigger-animate .bookmock {
   opacity: 1;
   right: 0;

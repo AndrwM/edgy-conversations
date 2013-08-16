@@ -322,6 +322,12 @@ footer {
 
 // Modernizr Check
 html.cssanimations {
+
+  header .video-promo {
+    opacity: 0;
+    &.show { opacity: 1; @include easing; }
+  }
+
   section.book {
 
     .bookmock {
