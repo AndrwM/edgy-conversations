@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   resizeHeader();
   scrollToId();
+  sectionAnimation();
 
   $( ".play-video" ).click(function() {
     playHeadVideo ();
@@ -44,14 +45,14 @@ function playHeadVideo () {
   });
 
   wistiaEmbed.bind("end", function () {
-    unload();
+    unloadVideo();
   });
 
   $('nav a').one('click', function() {
-    unload();
+    unloadVideo();
   });
 
-  function unload () {
+  function unloadVideo () {
     wistiaEmbed.remove();
     $('header').removeClass('video-play')
   }
@@ -82,3 +83,70 @@ function scrollToId () {
 };
 
 // ---------------------
+
+function sectionAnimation () {
+
+  $.fn.waypoint.defaults = {
+    context: window,
+    continuous: true,
+    enabled: true,
+    horizontal: false,
+    offset: '50%',
+    triggerOnce: true
+  }
+
+  $(book).waypoint(function() {
+    $(book).addClass('animate')
+  });
+
+  $(author).waypoint(function() {
+    $(author).addClass('animate')
+  });
+
+  $(order).waypoint(function() {
+    $(order).addClass('animate')
+  });
+
+}
+
+// ---------------------
+
+// // function nearEl (el) {
+
+// //   var threshold = 500;
+// //   var inView = $(document).scrollTop() + $(window).height()
+// //   var elTop = el.offset().top;
+// //   var elHeight = el.height();
+
+// //   if ( inView > elTop ) {
+// //     console.log('above')
+// //   }
+
+// // }
+
+// function inView (el) {
+
+//   var viewportHeight = $(window).height();
+//   var scrollTop = $(document).scrollTop();
+//   var elTop = el.offset().top;
+//   var elHeight = el.height();
+
+//   var nearThreshold = 500;
+
+
+//   // If the amount scrolled + browser height + 100 > distance from top of page + height
+//   if ( (scrollTop + viewportHeight + nearThreshold) > (elTop + elHeight) ) {
+//     // console.log('scrollTop',scrollTop,'+ viewportHeight', viewportHeight, '+ nearThreshold', nearThreshold)
+//     return true;
+//     console.log('yep')
+//   } else if ( (scrollTop + viewportHeight + nearThreshold) < (elTop + elHeight) ) {
+//     console.log('------not')
+//   }
+  
+// };
+
+// // ---------------------
+
+// function animate () {
+//   console.log('animate')
+// }
