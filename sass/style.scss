@@ -39,6 +39,10 @@ $dark-grey: #1a1a1a;
   @include transition-duration(.5s);
 }
 
+@mixin easing {
+  @include transition(all 1s cubic-bezier(0.645, 0.045, 0.355, 1.000));
+}
+
 //----------------- Base
 
 * { position: relative; }
@@ -105,7 +109,7 @@ section {
   }
 }
 
-//----------------- Site
+//----------------- Layout
 
 body {
   font-size: 14px;
@@ -311,4 +315,60 @@ footer {
   padding: 26px;
   background: $dark-grey;
   color: $grey;
+}
+
+
+//----------------- Scroll Animations
+
+// Modernizr Check
+html.cssanimations {
+  section.book {
+
+    .bookmock {
+      opacity: 0;
+      right: -200px;
+      @include easing;
+    }
+    &.trigger-animate .bookmock {
+      opacity: 1;
+      right: 0;
+    }
+
+    .diver {
+      opacity: 0;
+      top: 110px;
+      @include easing;
+      &.trigger-animate {
+        opacity: 1;
+        top: 0;
+      }
+    }
+
+  }
+  section.author {
+
+    .dan {
+      top: 200px;
+      opacity: 0;
+      @include easing;
+    }
+    &.trigger-animate .dan {
+      top: -87px;
+      opacity: 1;
+    }
+
+  }
+  section.order {
+
+    .bookmock {
+      opacity: 0;
+      right: -200px;
+      @include easing;
+    }
+    &.trigger-animate .bookmock {
+      opacity: 1;
+      right: 0;
+    }
+
+  }
 }

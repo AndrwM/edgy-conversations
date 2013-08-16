@@ -91,21 +91,31 @@ function sectionAnimation () {
     continuous: true,
     enabled: true,
     horizontal: false,
-    offset: '50%',
-    triggerOnce: true
+    offset: '60%',
+    triggerOnce: false
   }
 
   $(book).waypoint(function() {
-    $(book).addClass('animate')
+    $(book).addClass('trigger-animate')
   });
 
+  $('#book .diver').waypoint(function() {
+    $('.diver').addClass('trigger-animate')
+  }, { offset: '95%' }
+  );
+
   $(author).waypoint(function() {
-    $(author).addClass('animate')
+    $(author).addClass('trigger-animate')
   });
 
   $(order).waypoint(function() {
-    $(order).addClass('animate')
+    $(order).addClass('trigger-animate')
   });
+
+  $('header').waypoint(function() {
+    $('.trigger-animate').removeClass('trigger-animate')
+  }, { offset: 0 }
+  );
 
 }
 
