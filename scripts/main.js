@@ -34,6 +34,9 @@ function playHeadVideo () {
     playerColor: "000000",
     autoPlay: true,
     fullscreenButton: false,
+    playbar: false,
+    volumeControl: false,
+    smallPlayButton: false,
     container: "videoContainer",
   });
 

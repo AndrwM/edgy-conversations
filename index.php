@@ -67,7 +67,7 @@
 <section class="order" id="order">
   <div class="wrapper">
 
-    <h1>Pre-order Edgy Conversations</h1>
+    <h1>Notify Me When I Can Pre-Order</h1>
     <h2>Be the first to get this life changing book!</h2>
 
     <form accept-charset="UTF-8" name="form2" action="https://bd137.infusionsoft.com/app/form/process/6193b3f4eb16d94dfef56ce14ce05340" class="infusion-form" method="POST">
