@@ -9,6 +9,17 @@ $(document).ready(function() {
     return false;
   });
 
+  if ( '#confirmation' == window.location.hash) {
+    $('body').addClass('scroll-lock');
+    $('.modal-wrapper.confirmation').removeClass('hide');
+
+    $('.modal a.close').one('click', function() {
+      $('body').removeClass('scroll-lock');
+      $('.modal-wrapper.confirmation').fadeOut(500);
+    });
+
+  };
+
 });
 
 // ---------------------

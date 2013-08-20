@@ -94,4 +94,12 @@
   </div>
 </footer>
 
+<div class="modal-wrapper confirmation hide">
+  <div class="modal">
+    <h2>Thanks for your interest in EDGY Conversations!</h2>
+    <p>As a hand raiser you’ll be among the first to receive sneak peeks behind the cover and into the book before anyone else does. Keep an eye on your inbox, we’ll be sending updates and early access to sections of the book in the days and weeks ahead.</p>
+    <p><strong>Can’t wait to check it out?</strong><br />Explore the <a href="http://edgymanifesto.com">EDGY Manifesto</a> to learn more about what is means to be EDGY and how doing so can help you transform your business or go back to <a href="#" class="close">Edgy Conversations</a>.</p>
+  </div>
+</div>
+
 <?php get_footer(); ?>
