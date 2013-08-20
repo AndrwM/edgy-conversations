@@ -71,7 +71,7 @@ a {
   }
 }
 
-input {
+input[type="text"] {
   font-size: 18px;
   padding: 14px 16px;
   border: none;
@@ -80,6 +80,21 @@ input {
   &:focus {
     outline: $red solid 1px;
   }
+}
+
+input[type="checkbox"] {
+    display:none !important;
+    & + label {
+      padding: 0px 0 0px 21px;
+      background: url(images/checkbox.png) 0 0px no-repeat;
+      color: $grey;
+      @include fade;
+      font-size: 13px;
+      display: block;
+    }
+    &:checked + label {
+      background-position: 0 -17px;
+    }
 }
 
 section {
@@ -242,10 +257,16 @@ section.signup {
     margin-right: 6px;
   }
   a.btn {
-    padding: 14px 40px 13px;
+    padding: 14px 38px 13px;
     &:hover {
       color: #fff;
       background: #000;
+    }
+  }
+  label.checkbox {
+    margin: 7px 0px 4px 6px;
+    &:hover {
+      color: $dark-grey;
     }
   }
 
@@ -306,6 +327,13 @@ section.order {
       text-align: center;
       color: $grey;
     }
+    label.checkbox {
+      margin: 10px;
+      &:hover {
+        color: $light-grey;
+      }
+    }
+
   }
   .bookmock {
     margin: 19px 0 0px 60px;
