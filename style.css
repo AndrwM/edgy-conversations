@@ -509,73 +509,165 @@ footer {
   padding: 0 0 10px 0;
 }
 
-/* line 392, sass/style.scss */
-html.cssanimations header .video-promo {
-  opacity: 0;
-  z-index: 100;
+@media (min-width: 601px) {
+  /* line 393, sass/style.scss */
+  html.cssanimations header .video-promo {
+    opacity: 0;
+    z-index: 100;
+  }
+  /* line 396, sass/style.scss */
+  html.cssanimations header .video-promo.show {
+    opacity: 1;
+    -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 1000;
+  }
+  /* line 405, sass/style.scss */
+  html.cssanimations section.book .bookmock {
+    opacity: 0;
+    right: -200px;
+    -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  /* line 410, sass/style.scss */
+  html.cssanimations section.book.trigger-animate .bookmock {
+    opacity: 1;
+    right: 0;
+  }
+  /* line 415, sass/style.scss */
+  html.cssanimations section.book .diver {
+    opacity: 0;
+    top: 110px;
+    -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  /* line 419, sass/style.scss */
+  html.cssanimations section.book .diver.trigger-animate {
+    opacity: 1;
+    top: 0;
+  }
+  /* line 428, sass/style.scss */
+  html.cssanimations section.author .dan {
+    top: 200px;
+    opacity: 0;
+    -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  /* line 433, sass/style.scss */
+  html.cssanimations section.author.trigger-animate .dan {
+    top: -87px;
+    opacity: 1;
+  }
+  /* line 441, sass/style.scss */
+  html.cssanimations section.order .bookmock {
+    opacity: 0;
+    right: -200px;
+    -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  /* line 446, sass/style.scss */
+  html.cssanimations section.order.trigger-animate .bookmock {
+    opacity: 1;
+    right: 0;
+  }
 }
-/* line 395, sass/style.scss */
-html.cssanimations header .video-promo.show {
-  opacity: 1;
-  -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  z-index: 1000;
-}
-/* line 404, sass/style.scss */
-html.cssanimations section.book .bookmock {
-  opacity: 0;
-  right: -200px;
-  -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-/* line 409, sass/style.scss */
-html.cssanimations section.book.trigger-animate .bookmock {
-  opacity: 1;
-  right: 0;
-}
-/* line 414, sass/style.scss */
-html.cssanimations section.book .diver {
-  opacity: 0;
-  top: 110px;
-  -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-/* line 418, sass/style.scss */
-html.cssanimations section.book .diver.trigger-animate {
-  opacity: 1;
-  top: 0;
-}
-/* line 427, sass/style.scss */
-html.cssanimations section.author .dan {
-  top: 200px;
-  opacity: 0;
-  -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-/* line 432, sass/style.scss */
-html.cssanimations section.author.trigger-animate .dan {
-  top: -87px;
-  opacity: 1;
-}
-/* line 440, sass/style.scss */
-html.cssanimations section.order .bookmock {
-  opacity: 0;
-  right: -200px;
-  -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-/* line 445, sass/style.scss */
-html.cssanimations section.order.trigger-animate .bookmock {
-  opacity: 1;
-  right: 0;
+@media (max-width: 600px) {
+  /* line 458, sass/style.scss */
+  body {
+    min-width: 800px;
+  }
+
+  /* line 459, sass/style.scss */
+  .wrapper {
+    width: 700px;
+  }
+
+  /* line 462, sass/style.scss */
+  header .top {
+    width: 800px;
+  }
+  /* line 464, sass/style.scss */
+  header .top .wrapper {
+    padding: 16px;
+    width: 700px;
+    text-align: center;
+  }
+  /* line 468, sass/style.scss */
+  header .top .wrapper h1 {
+    float: none;
+  }
+  /* line 469, sass/style.scss */
+  header .top .wrapper nav {
+    display: none;
+  }
+
+  /* line 474, sass/style.scss */
+  section .left-content {
+    width: auto;
+    float: none;
+  }
+
+  /* line 476, sass/style.scss */
+  section.signup {
+    padding: 20px 0;
+  }
+  /* line 478, sass/style.scss */
+  section.signup input {
+    width: 316px;
+    margin: 0;
+  }
+  /* line 482, sass/style.scss */
+  section.signup a.submit {
+    display: block;
+    margin: 12px 0;
+  }
+
+  /* line 489, sass/style.scss */
+  section.book img.bookmock {
+    margin: 20px auto -50px auto;
+    width: 90%;
+  }
+  /* line 493, sass/style.scss */
+  section.book .diver {
+    padding: 50px;
+    font-size: 20px;
+    background: #000;
+  }
+
+  /* line 500, sass/style.scss */
+  section.author img.dan {
+    margin: 20px auto -300px auto;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  /* line 509, sass/style.scss */
+  section.order form {
+    width: auto;
+    float: none;
+  }
+  /* line 512, sass/style.scss */
+  section.order form input {
+    width: 670px;
+  }
+  /* line 513, sass/style.scss */
+  section.order form a.submit {
+    display: block;
+  }
+  /* line 515, sass/style.scss */
+  section.order img {
+    display: none;
+  }
 }

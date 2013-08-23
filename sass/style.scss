@@ -387,65 +387,132 @@ footer {
 //----------------- Scroll Animations
 
 // Modernizr Check
-html.cssanimations {
+@media (min-width: 601px) {
+  html.cssanimations {
 
-  header .video-promo {
-    opacity: 0;
-    z-index: 100;
-    &.show {
-      opacity: 1;
-      @include easing;
-      z-index: 1000
+    header .video-promo {
+      opacity: 0;
+      z-index: 100;
+      &.show {
+        opacity: 1;
+        @include easing;
+        z-index: 1000
+      }
+    }
+
+    section.book {
+
+      .bookmock {
+        opacity: 0;
+        right: -200px;
+        @include easing;
+      }
+      &.trigger-animate .bookmock {
+        opacity: 1;
+        right: 0;
+      }
+
+      .diver {
+        opacity: 0;
+        top: 110px;
+        @include easing;
+        &.trigger-animate {
+          opacity: 1;
+          top: 0;
+        }
+      }
+
+    }
+    section.author {
+
+      .dan {
+        top: 200px;
+        opacity: 0;
+        @include easing;
+      }
+      &.trigger-animate .dan {
+        top: -87px;
+        opacity: 1;
+      }
+
+    }
+    section.order {
+
+      .bookmock {
+        opacity: 0;
+        right: -200px;
+        @include easing;
+      }
+      &.trigger-animate .bookmock {
+        opacity: 1;
+        right: 0;
+      }
+
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  body { min-width: 800px; }
+  .wrapper { width: 700px; }
+
+  header {
+    .top {
+      width: 800px;
+      .wrapper {
+        padding: 16px;
+        width: 700px;
+        text-align: center;
+        h1 { float: none; }
+        nav { display: none; }
+      }
+    }
+  }
+
+  section .left-content { width: auto; float: none; }
+
+  section.signup {
+    padding:20px 0;
+    input {
+      width: 316px;
+      margin: 0;
+    }
+    a.submit {
+      display: block;
+      margin: 12px 0;
     }
   }
 
   section.book {
-
-    .bookmock {
-      opacity: 0;
-      right: -200px;
-      @include easing;
+    img.bookmock {
+      margin: 20px auto -50px auto;
+      width: 90%;
     }
-    &.trigger-animate .bookmock {
-      opacity: 1;
-      right: 0;
-    }
-
     .diver {
-      opacity: 0;
-      top: 110px;
-      @include easing;
-      &.trigger-animate {
-        opacity: 1;
-        top: 0;
-      }
+      padding: 50px;
+      font-size: 20px;
+      background: #000;
     }
-
   }
-  section.author {
 
-    .dan {
-      top: 200px;
-      opacity: 0;
-      @include easing;
-    }
-    &.trigger-animate .dan {
-      top: -87px;
-      opacity: 1;
-    }
-
+  section.author img.dan {
+    margin: 20px auto -300px auto;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
   }
+
   section.order {
-
-    .bookmock {
-      opacity: 0;
-      right: -200px;
-      @include easing;
+    form {
+      width: auto;
+      float: none;
+      input { width: 670px; }
+      a.submit { display: block; }
     }
-    &.trigger-animate .bookmock {
-      opacity: 1;
-      right: 0;
-    }
-
+    img { display: none; }
   }
+
 }
