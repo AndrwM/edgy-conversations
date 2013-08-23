@@ -455,18 +455,25 @@ footer {
 
 @media (max-width: 600px) {
 
-  body { min-width: 800px; }
-  .wrapper { width: 700px; }
+  body { min-width: 600px; }
+  .wrapper { width: 500px; }
 
   header {
     .top {
-      width: 800px;
+      width: 600px;
       .wrapper {
         padding: 16px;
-        width: 700px;
+        width: 500px;
         text-align: center;
         h1 { float: none; }
         nav { display: none; }
+      }
+    }
+    .video-promo {
+      width: 600px;
+      h2 span {
+        font-size: 140px;
+        line-height: 132px;
       }
     }
   }
@@ -476,7 +483,7 @@ footer {
   section.signup {
     padding:20px 0;
     input {
-      width: 316px;
+      width: 216px;
       margin: 0;
     }
     a.submit {
@@ -509,7 +516,7 @@ footer {
     form {
       width: auto;
       float: none;
-      input { width: 670px; }
+      input { width: 468px; }
       a.submit { display: block; }
     }
     img { display: none; }

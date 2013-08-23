@@ -584,22 +584,22 @@ footer {
 @media (max-width: 600px) {
   /* line 458, sass/style.scss */
   body {
-    min-width: 800px;
+    min-width: 600px;
   }
 
   /* line 459, sass/style.scss */
   .wrapper {
-    width: 700px;
+    width: 500px;
   }
 
   /* line 462, sass/style.scss */
   header .top {
-    width: 800px;
+    width: 600px;
   }
   /* line 464, sass/style.scss */
   header .top .wrapper {
     padding: 16px;
-    width: 700px;
+    width: 500px;
     text-align: center;
   }
   /* line 468, sass/style.scss */
@@ -610,41 +610,50 @@ footer {
   header .top .wrapper nav {
     display: none;
   }
-
+  /* line 472, sass/style.scss */
+  header .video-promo {
+    width: 600px;
+  }
   /* line 474, sass/style.scss */
+  header .video-promo h2 span {
+    font-size: 140px;
+    line-height: 132px;
+  }
+
+  /* line 481, sass/style.scss */
   section .left-content {
     width: auto;
     float: none;
   }
 
-  /* line 476, sass/style.scss */
+  /* line 483, sass/style.scss */
   section.signup {
     padding: 20px 0;
   }
-  /* line 478, sass/style.scss */
+  /* line 485, sass/style.scss */
   section.signup input {
-    width: 316px;
+    width: 216px;
     margin: 0;
   }
-  /* line 482, sass/style.scss */
+  /* line 489, sass/style.scss */
   section.signup a.submit {
     display: block;
     margin: 12px 0;
   }
 
-  /* line 489, sass/style.scss */
+  /* line 496, sass/style.scss */
   section.book img.bookmock {
     margin: 20px auto -50px auto;
     width: 90%;
   }
-  /* line 493, sass/style.scss */
+  /* line 500, sass/style.scss */
   section.book .diver {
     padding: 50px;
     font-size: 20px;
     background: #000;
   }
 
-  /* line 500, sass/style.scss */
+  /* line 507, sass/style.scss */
   section.author img.dan {
     margin: 20px auto -300px auto;
     width: 100%;
@@ -653,20 +662,20 @@ footer {
     right: 0;
   }
 
-  /* line 509, sass/style.scss */
+  /* line 516, sass/style.scss */
   section.order form {
     width: auto;
     float: none;
   }
-  /* line 512, sass/style.scss */
+  /* line 519, sass/style.scss */
   section.order form input {
-    width: 670px;
+    width: 468px;
   }
-  /* line 513, sass/style.scss */
+  /* line 520, sass/style.scss */
   section.order form a.submit {
     display: block;
   }
-  /* line 515, sass/style.scss */
+  /* line 522, sass/style.scss */
   section.order img {
     display: none;
   }
