@@ -1,0 +1,61 @@
+#wald-sitepicker {
+  margin-left: 13px;
+  display: inline-block;
+  a.droplink {
+    @include ff-open-bold;
+    text-transform: uppercase;
+    color: $grey;
+    background: #000;
+    font-size: 14px;
+    padding: 5px 11px;
+    span.icon {
+      background: url(images/sitepicker/btn-icon.gif) 0 -26px no-repeat;
+      width: 12px;
+      height: 11px;
+      display: inline-block;
+      margin: 0 8px 0 0;
+    }
+    &:hover {
+      background: $red;
+      color: #fff;
+      span.icon { background-position: 0 -13px; }
+    }
+    &:active, &.active {
+      background: $red;
+      color: #fff;
+      span.icon { background-position: 0 0; }
+    }
+  }
+
+  .drop {
+    position: absolute;
+    bottom: 26px;
+    left: -1px;
+    width: 260px;
+    z-index: 7000;
+    display: none;
+    a {
+      display: block;
+      &.site {
+        @include ff-open-bold;
+        background: $light-grey;
+        border-bottom: 1px solid rgba(127, 127, 127, 0.3);
+        color: $dark-grey;
+        padding:11px 16px;
+        text-transform: uppercase;
+        &:hover, &:active {
+          color: $red;
+          background: url(images/sitepicker/link-icon.gif) no-repeat 232px 13px #fff;
+        }
+      }
+      &.ad {
+        background: #000;
+        height: 115px;
+        img:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+}

@@ -91,6 +91,26 @@
 <footer>
   <div class="wrapper">
     Copyright Waldschmidt Partners <?php echo date("Y"); ?>, All Rights Reserved.
+
+    <!-- Picker -->
+    <div id="wald-sitepicker">
+      <a class="droplink" href="#"><span class="icon"></span>Waldschmidt Partners Sites</a>
+
+      <!-- Picker Drop -->
+      <div class="drop">
+        <a class="site" href="http://danwaldschmidt.com">Dan Waldschmidt</a>
+        <a class="site" href="http://edgyaudit.com">Edgy Audit</a>
+        <a class="site" href="http://edgymanifesto.com">Edgy Manifesto</a>
+        <a class="site" href="http://edgyquotes.com">Edgy Quotes</a>
+<!--         <a class="ad" href="http://google.com">
+          <img src="<?php bloginfo('template_url'); ?>/images/sitepicker/ad-edgybook.jpg">
+        </a> -->
+      </div>
+      <!-- Picker Drop -->
+
+    </div>
+    <!-- Picker End -->
+
   </div>
 </footer>
 

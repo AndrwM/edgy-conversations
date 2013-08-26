@@ -15,6 +15,7 @@
   <script src="<?php bloginfo('template_url'); ?>/scripts/waypoints.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/scripts/modernizr.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/scripts/main.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/scripts/wald-sitepicker.js"></script>
 
   <?php wp_head(); ?>
   

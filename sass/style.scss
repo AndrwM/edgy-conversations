@@ -45,7 +45,11 @@ $dark-grey: #1a1a1a;
 
 //----------------- Base
 
-* { position: relative; }
+* {
+  position: relative;
+  &::-moz-selection { background: $red; color: #fff; }
+  &::selection { background: $red; color: #fff; }
+}
 .scroll-lock { overflow: hidden; }
 .hide { display: none; }
 
@@ -351,6 +355,10 @@ footer {
   padding: 26px;
   background: $dark-grey;
   color: $grey;
+  .wrapper {
+    @include clearfix;
+    overflow: visible;
+  }
 }
 
 //----------------- Modal
@@ -523,3 +531,5 @@ footer {
   }
 
 }
+
+@import "sitepicker";
